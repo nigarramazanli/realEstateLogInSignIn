@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.2.0/build/css/intlTelInput.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="branches.css">
+
+    
+</head>
+<body>
+    <div class="branches_main_Container">
+        <div class="branches_flex_Container">
+       
+            <form onsubmit="branch_form_submit()" id="branch_submit_Container">
+
+                <div class="filial_yarat_h2">
+                    <h1>Filial Yarat</h1>
+                </div>
+
+
+                <div class="branches_Div_Container">
+
+<div class="branch_child_Container">
+    <label for="branches_name">Filial Adı</label><br>
+    <select name="filial_name" id="branches_name">
+        <option  selected value=""></option>
+        <option value="Elmlər">Elmlər</option>
+        <option value="Ağ şəhər">Ağ şəhər</option>
+        <option value="Gənclik">Gənclik</option>
+        <option value="28May">28 May</option>
+        <option value="Nərimanov">Nərimanov</option>
+        <option value="Mərdəkankan">Mərdəkankan</option>
+        <option value="Yasamal">Yasamal</option>
+        
+    </select>
+    <p id="branch_name_error"></p>
+    </div>
+    <div class="branch_child_Container">
+        <label for="branch_tel">Əlaqə nömrəsini qeyd edin</label><br>
+        <input type="tel" name="branch_tel_name" id="branch_tel" >
+        <p id="branch_tel_error"></p>
+    
+    </div>
+    <div class="branch_child_Container">
+        <label for="branch_note_input">Ünvanı qeyd edin</label><br>
+        <input type="text" name="branch_name" id="branch_note_input">
+        <p id="branch_address_error"></p>
+    </div>
+    <button id="branch_submit_button">Yarat!</button>
+                </div>
+    
+                
+    <div>
+    
+    </div>
+            </form>
+            <div class="real_estate_icon">
+                <img src="5341783210268415170-removebg-transformed.png"    >
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.2.0/build/js/intlTelInput.min.js"></script>
+    <script src="branches.js"></script>
+</body>
+</html>

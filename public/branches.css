@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+body{    background: #2b3d2d;}
+
+.filial_yarat_h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.filial_yarat_h2 h1{
+    background: linear-gradient(90deg, #c39f75 0%, #8b673d 80%);
+    -webkit-background-clip: text;
+    letter-spacing: 3px;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+.branches_main_Container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+.branches_Div_Container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 36%;
+    height: 55%;
+    
+}
+
+.branches_flex_Container{border: 1.5px solid transparent;
+    height: 70%;
+    /* border-radius: 0px; */
+    border-image: linear-gradient(90deg, #c39f75 0%, #8b673d 80%);
+    
+    /* left: 13.5%; */
+    border-image-slice: 1;
+    width: 77%;
+    display: flex;
+}#branch_submit_Container{width: 50%;
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.branch_child_Container label{
+    color: #a3753b;
+    font-size: 1.11rem;
+}
+.branch_child_Container p{
+    color: red;
+    margin-top: 3px;
+}
+.branch_child_Container select,input{
+    height: 4vh;
+    /* border-radius: 0px; */
+    width: 100%;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(90deg, #b59977 0%, #8b673d 80%);
+    border-image-slice: 1;
+}
+.real_estate_icon{width: 50%;display: flex;align-items: center;justify-content: center;}
+
+.real_estate_icon img{
+    width: 75%;
+
+}
+
+#branch_submit_button{
+    width: 79%;
+    background: linear-gradient(90deg, #c39f75 0%, #8b673d 80%);
+    margin: 0 auto;
+    border: navajowhite;
+    height: 4.3vh;
+    /* height: 100%; */
+    /* background: transparent; */
+    font-size: 1rem;
+    color: #c7c0a9;
+}
+
+
+

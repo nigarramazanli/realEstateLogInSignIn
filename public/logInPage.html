@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginPage.css">
+    <script async src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="logInPage.js"></script>
+
+</head>
+<body>
+    <div class="main_logIn_container">
+
+        <div class="main_inside_Container">
+            
+            <div class="main_Second_inside_Container">
+
+                <div class="second_container">
+                    <div class="h1_container animated-text-container">
+                        <h1>Real Əmlak</h1>
+                        
+                       
+                        
+                        
+            
+                    </div>
+                    <div class="logIn_Container">
+                        <form id="logInForm" onsubmit="logInSubmit()">
+                        <div>
+                            <input type="text" name="logİn_username" id="username_inputLogIn" placeholder="İstifadəçi adınızı daxil edin" title="">
+                        <p id="usernameErrorMessageLogIn"></p>
+                        </div>
+                            <div>
+                                <input type="email" name="login_email" id="email_inputLogIn" placeholder="Emailinizi daxil edin" title="">
+                            <p id="emailErrorMessageLogIn"></p>
+                            </div>
+                        <div>
+                            <input type="text" name="login_parol" id="parol_inputLogIn" placeholder="Parolunuzu daxil edin" title="">
+                        <p id="passwordErrorMessageLogIn"></p>
+                        </div>
+                        <!-- <div class="btn btn-one">
+                            <button>Daxil Ol</button>
+            
+                        </div> -->
+                        <button class="btn btn-one" id="logInSubmitButton">Daxil  ol</button>
+                        <a href="signUpPage.html">Hesabınız Yoxdur?</a>
+                        </form>
+                    </div>
+                    
+                    
+                    
+        
+        
+                </div>
+                <div class="counter_div_container">
+                    <div class="counter-container1">
+                        <h2>53341</h2>
+                        <p>satış və kirayə</p>
+                    </div>
+                    <div class="counter-container2">
+                        <h2>16</h2>
+                        <p>Filial</p>
+                    </div>
+                    <div class="counter-container3">
+                        <h2>10</h2>
+                        <p>il fəaliyyət</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+       
+    </div>
+    <script src="logInPage.js"></script>
+</body>
+</html>

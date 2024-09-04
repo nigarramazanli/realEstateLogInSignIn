@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+.main_inside_Container{    height: 73%;
+
+    width: 80%;
+}
+.main_logIn_container{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(./background_login.jpeg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    /* background-position: 0 80%; */
+    /* buttonu həmişə paddinglə verir. */
+    /* background: #2b3d2d; */
+}
+.main_Second_inside_Container{
+
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.h1_container{
+    margin-top: 10px;
+    /* left: 40.5%; */
+    width: 100%;
+    font-size: 1.1rem;     
+    /* left: 40.5%; */
+    width: 100%;}.email_input{
+    position: relative;
+}
+.email_input p{
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.second_container{
+    border: 1.5px solid transparent;flex-wrap: wrap;
+    display: flex;
+
+    /* border-radius: 0px; */
+    border-image: linear-gradient(90deg, #c39f75 0%, #8b673d 80%);
+    /* left: 13.5%; */
+    border-image-slice: 1;
+    /* top: 13%; */
+    width: 27%;
+    text-align: center;
+    /* position: absolute; */
+    height: 52vh;
+}
+.counter-container1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.counter-container1 h2 {
+    font-size: 50px;
+    margin: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.counter-container1 p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+.counter-container2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.counter-container2 h2 {
+    font-size: 50px;
+    margin: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.counter-container2 p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+.counter-container3 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.counter-container3 h2 {
+    font-size: 50px;
+    margin: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.counter-container3 p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+.counter-container4 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.counter-container4 h2 {
+    font-size: 50px;
+    margin: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+.counter_div_container{
+    /* position: absolute; */
+    /* top: 80%; */
+    /* left: 10%; */
+    margin: 13px auto 0;
+
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+}
+.counter_div_container h2,p{
+    background: linear-gradient(90deg, #c39f75 0%, #8b673d 80%);
+    -webkit-background-clip: text;
+    letter-spacing: 3px;
+    -webkit-text-fill-color: transparent;
+}
+
+.counter-container4 p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.h1_container h1{
+    background: linear-gradient(90deg, #c39f75 0%, #8b673d 80%);
+    -webkit-background-clip: text;
+    letter-spacing: 3px;
+    -webkit-text-fill-color: transparent;
+}
+.logIn_Container{
+    height: 63%;
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 65%;}
+form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#logInForm a{
+    text-align: center;
+    color: #c0971bcc;
+    text-decoration: none;
+}
+form input{
+
+    width: 100%;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(90deg, #b59977 0%, #8b673d 80%);
+    border-image-slice: 1;
+    padding: 5px;}
+
+.btn {
+    margin: 0 auto;
+    /* left: 44%; */
+   
+    text-align: center;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(90deg, #c39f75 0%, #8b673d 80%);
+    border-image-slice: 1;
+    /* border: 1px solid #c4b013; */
+    cursor: pointer;
+  }
+  
+  /* 
+  ========================
+        BUTTON ONE
+  ========================
+  */
+ 
+  .btn-one {
+
+    padding: 5px 53px;
+
+    background: linear-gradient(90deg, #c39f75 0%, #8b673d 80%);
+    border: navajowhite;
+    height: 4.3vh;
+    /* height: 100%; */
+    /* background: transparent; */
+    font-size: 1rem;
+    color: #c7c0a9;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+    color: #663600;
+  }
+
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+
+

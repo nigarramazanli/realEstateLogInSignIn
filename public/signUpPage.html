@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signUpPage.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.2.0/build/css/intlTelInput.css">    
+
+</head>
+
+<body>
+    <div class="signUp_Container">
+      <form id="signUpForm" >
+        <div class="h1_signUpPage">
+            <h2>Real Əmlak</h2>
+            </div>
+            <div class="change_information_Container">
+                <button  id="personalInformation">Şəxsi Məlumatlar</button>
+                <button  id="workInformation">İş Məlumatlari</button>
+                </div>    
+        <div class="registration_Personal_Container">
+            <div class="registration_Container_left">
+                <div class="registration_inputs">
+
+                    <label for="name_signİn">Adı</label><br>
+                <input type="text" name="name_signin" id="name_signİn">
+                <p id="name_error_message" style="color: red;"></p>
+                </div>
+                <div class="registration_inputs">
+                    <label for="surname_input">Soyadı</label>
+                    <input type="text" name="surname" id="surname_input">
+                    <p id="surname_error_message"></p>
+                </div>
+                <div class="registration_inputs">
+                    <label for="username_input">İstifadəçi Adı</label>
+                    <input type="text" name="username" id="username_input">
+                    <p id="username_error_message"></p>
+                </div>
+                <div class="registration_inputs">
+                    <label for="email_input">Emaili</label>
+                    <input type="email" name="email" id="email_input">
+                    <p id="email_error_message"></p>
+                </div>
+               
+                <div class="registration_inputs">
+                    <label for="number_SignIn">Nömrəsi</label>
+                    <input type="tel" name="number" id="number_SignIn">
+                    <p id="number_error_message" style="color: red;"></p>
+    
+                </div>
+        
+                <div class="registration_inputs">
+        
+                    <label for="password_signİn">Parolu</label><br>
+                <input type="password" name="password_name" id="password_signİn">
+                <p id="password_error_message"></p>
+    
+                </div>
+        
+                <div class="registration_inputs">
+        
+                    <label for="password_confirm_signİn">Parolu Təsdiqləyin</label><br>
+                <input type="password" name="password_confirm_name" id="password_confirm_signİn">
+                <p id="confirm_error_message"></p>
+                </div>
+                
+            </div>
+            <div class="registration_Container_Right">
+                <div class="registration_inputs">
+                    <label for="relative_name_input">Qohumunun Adı</label>
+                    <input type="text" name="relative_name" id="relative_name_input">
+                    <p id="relative_name_error_message"></p>
+                </div>
+                <div class="registration_inputs">
+
+                    <label for="relative_number_input">Qohumunun Nömrəsi</label>
+                    <input type="tel" name="relative_number" id="relative_number_input">
+                    <p id="relative_number_error_message"></p>
+
+                </div>
+                <div class="registration_inputs">
+                    
+                    <label for="relative_Select">Qohumluq Əlaqəsi</label>
+                    <select name="relative_contact" id="relative_Select">
+                        <option value="" hidden></option>
+                        <option value="ana">Ana</option>
+                        <option value="ata">Ata</option>
+                        <option value="qardaş">Qardaş</option>
+                        <option value="bacı">Bacı</option>
+                        <option value="əmi">Əmi</option>
+                    </select>
+                    <p id="relative_select_error_message"></p>
+                </div>
+
+                <div class="registration_inputs">
+                    <label for="fin_input">Fin Kod</label>
+                    <input type="text" name="fin_code" id="fin_input">
+                    
+                    <p id="fin_error_message"></p>
+                </div>
+                <div class="registration_inputs">
+                    <label for="seriya_input">Seriya Nömrəsi</label>
+                    <input type="text" name="seriya" id="seriya_input">
+
+                    <p id="seriya_error_message"></p>
+
+                </div>
+                <div class="registration_inputs">
+                    <label for="adress_logİn_input">Qeydiyyat Ünvanı</label>
+                    <input type="text" id="adress_logİn_input">
+                    <p id="address_error_message"></p>
+                </div>
+                <div class="registration_inputs">
+                    <label for="address_living_input">Yaşadığı Ünvan</label>
+                    <input type="text" name="" id="address_living_input">
+
+                    <p id="address_living_error_message">
+
+                    </p>
+
+                </div>
+            </div>
+            
+
+
+
+            
+             
+           
+            
+        </div>
+        <div class="registration_Work_Container">
+
+            <div class="images_inputs_Container">
+                <div class="user_Image_Container">
+                    <div class="userProfilContainer">
+                        <img src="userProfilImage1.jpg" id="userProfilImage">
+
+                    </div>
+                    <label for="username__image_input">Şəkil Əlavə Edin</label>
+                <input type="file" name="" id="username__image_input" accept="image/*">
+                <p id="user_image_error_message"></p>
+                </div>
+                <div class="user_Image_Container">
+                    <div class="userProfilContainer">
+                        <img src="userProfilImage1.jpg" alt="" id="vesiqe_image">
+
+                    </div>
+                    <label for="vesiqe__image_input">Şəkil Əlavə Edin</label>
+                <input type="file" name="" id="vesiqe__image_input" accept="image/*">
+                <p id="vesiqe_error_message">
+
+
+                </p>
+                </div>
+            </div>
+
+                        <div class="registration_Container_left ">
+                
+                <div class="registration_inputs">
+                    <label for="filial_select">Filial</label>
+                    <select name="filial" id="filial_select">
+                        <option value="" hidden></option>
+                        <option value="Ağ Şəhər">Ağ Şəhər</option>
+                        <option value="28 May">28 May</option>
+                        <option value="Elmlər">Elmlər</option>
+                    </select>
+                    <p id="branch_error_message"></p>
+                    </div>
+                <div class="registration_inputs">
+                    <label for="start_job_date">İşə Başlama Tarixi</label>
+                    <input type="date" name="start_time" id="start_job_date">
+                    <p id="startDay_error_message"></p>
+                </div>
+                <div class="registration_inputs"><label for="left_job_time">İşi Tərk Etmə Tarixi</label>
+
+                    <input type="date" name="left_time" id="left_job_time">
+                    <p id="leave_error_message"></p>
+                </div>
+
+                
+
+                <div class="registration_inputs">
+                    <label for="user_position">Vəzifəniz</label>
+                    <select id="user_position">
+                        <option value="" hidden></option>
+                        <option value="mudir">Mudir</option>
+                        <option value="muavin">Mudir Muavini</option>
+                        <option value="proqramist">Proqramist</option>
+                        <option value="operator">Operator</option>
+                        
+                    </select>
+                    <p id="position_error_message" style="color: red;"></p>
+    
+                </div>
+            </div>
+            <div class="registration_Container_Right">
+                <div class="registration_inputs"><label for="education_user_input">
+                    Təhsiliniz
+                </label>
+                <select name="education_user" id="education_user_input">
+                    <option value="" hidden></option>
+                    <option value="Ali">Ali</option>
+
+                    <option value="Natamam Ali">Natamam Ali</option>
+                    <option value="Orta">Orta</option>
+                </select>
+                <p id="education_error_message"></p>
+                
+                
+                </div>
+                <div class="registration_inputs"><label for="company_number_input">Şirkət Nömrəsi</label>
+                    <input type="tel" name="company_number" id="company_number_input">
+                    <p id="company_number_error">
+
+                    </p>
+                </div>
+                <div class="registration_inputs"><label for="left_job_reason">İşdən Çıxma Səbəbi</label>
+
+                    <input type="text" name="left_reason" id="left_job_reason">
+                    <p id="reason_error_message"></p>
+
+                </div>
+            </div>
+            <div class="registration_note_Container ">
+                <label for="note_registration_input">Qeydləriniz</label>
+                <br>
+                <textarea type="text" name="noteİnput" id="note_registration_input"></textarea>
+                <p id="note_error_message"></p>
+            </div>
+            
+
+        </div>
+        
+        <div class="button_container">
+
+            
+           
+                       <button class="btn btn-one" id="signUpSubmitId">Hesab Yarat</button>
+
+                       <div class="account_control">
+                        <a href="logInPage.html">Hesabınız Var?</a>
+                    </div>
+                       </div>
+
+        
+
+        
+
+      </form><script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.2.0/build/js/intlTelInput.min.js"></script>  
+      
+      <script src="signUpPage.js"></script>
+</body>
+</html>
